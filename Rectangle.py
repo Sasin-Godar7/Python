@@ -8,6 +8,7 @@
 # print(f"this is the product {2*2}")
 # print(f"this is the power {2**3}")
 
+
 print("Enter the sides :")
 a = int(input("enter the side a "))
 b=int(input("enter the side b "))
@@ -18,7 +19,9 @@ s = (a+b+c) / 2
 area = (s*(s-a) * (s-b) * (s-c))**0.5
 
 print(f"the semi  of traingle is {s}")
-print(f"the area of perimeter is {area}")
+
+print(f"The area of triangle is {area:.3f}")
+
 
 
 
