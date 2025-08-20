@@ -37,12 +37,71 @@
 # for i in range(1,10):
 #     print(i)
 
-for i in range(1,10):
-        print("sasin")
+# for i in range(1,10):
+#         print("sasin")
       
-var = "Lumbini ict campus"
-for i in var:
-        print(i)      
+# var = "Lumbini ict campus"
+# for i in var:
+#         print(i)      
+
+
+
+# #break-->>
+# num = 0
+# for i in range(10):
+#     num +=1 
+#     if num == 8:
+#         break
+#     print("the number has value :",num)
+# print("out of looop..!!")  
+
+
+#continue--------->
+# num = 0
+# for i in range(10):
+#     num +=1 
+#     if num == 8:
+#         continue
+#     print("the number has value :",num)
+# print("out of looop..!!") 
+
+
+#Match case--------->
+
+# day = int(input("enter the number from 1 to 7 :"))
+# match day:
+#     case 1:
+#         print ("sunday")
+#     case 2:
+#         print ("monday")
+#     case 3:
+#         print ("tuesday")
+#     case 4:
+#         print ("wednesday")
+#     case 5:
+#         print ("thursday")
+#     case 6:
+#         print ("friday")
+#     case 7:
+#         print ("saturday")
+#     case _:
+#         print ("invalid number entered" )
+    
+
+
+# for i in range(1,50):
+#     if (i%2)!=0:
+#         continue
+#     print(i)
+
+
+
+    
+    
+    
+   
+
+
 
 
 
