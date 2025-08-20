@@ -20,24 +20,39 @@
 
 
 
+#Assignment
+
+names = ["sasin","ashok","abin","as"]
+
+# Filter and sort in one go
+new_list = sorted([name for name in names if name[0] == 'a' and len(name) > 3])
+
+print(new_list)
+
+
+
+
+
+
+
 
 #--------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 
 #Tuple
 
-t = (1,'c',"lumbini",2+2)
-print(t)
-print(type(t))
+# t = (1,'c',"lumbini",2+2)
+# print(t)
+# print(type(t))
 
-l= list(t)
-print(l)
-print(type(l))
-l.append("campus")
-print(l)
+# l= list(t)
+# print(l)
+# print(type(l))
+# l.append("campus")
+# print(l)
 
-t1 = tuple(l)
-print(t1) 
-print(type(t1)) 
+# t1 = tuple(l)
+# print(t1) 
+# print(type(t1)) 
 #here we cant append un tuple so we change it into list then append to it and later convert the list into tuple
 
 
