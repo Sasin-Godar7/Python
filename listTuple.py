@@ -25,4 +25,20 @@
 
 #Tuple
 
-t
+t = (1,'c',"lumbini",2+2)
+print(t)
+print(type(t))
+
+l= list(t)
+print(l)
+print(type(l))
+l.append("campus")
+print(l)
+
+t1 = tuple(l)
+print(t1) 
+print(type(t1)) 
+#here we cant append un tuple so we change it into list then append to it and later convert the list into tuple
+
+
+
