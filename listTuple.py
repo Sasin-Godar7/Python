@@ -22,12 +22,24 @@
 
 #Assignment
 
-names = ["sasin","ashok","abin","as"]
+# names = ["sasin","ashok","abin","as"]
+# newnames = []
 
-# Filter and sort in one go
-new_list = sorted([name for name in names if name[0] == 'a' and len(name) > 3])
+# for word in names:
+#     if len(word) > 3 and word[0] =='a':
+#         newnames.append(word)
+#         print(newnames)
+# newnames.sort()
+# print(newnames)
 
-print(new_list)
+
+
+
+
+
+
+
+
 
 
 
