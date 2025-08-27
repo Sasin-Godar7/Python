@@ -39,14 +39,14 @@
 
 # ---------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>
 
-d = {
-    "Faculty " : "bca",
-    "sem" : 4,
-    "Location":"gaidakot"
+# d = {
+#     "Faculty " : "bca",
+#     "sem" : 4,
+#     "Location":"gaidakot"
 
-}
-print(d)
-print(type(d))
+# }
+# print(d)
+# print(type(d))
 
 
 

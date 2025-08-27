@@ -114,6 +114,20 @@
  
 
 
+# import random
+
+# a= random.random()
+# print(a)
+
+# num = random.randint(1,50)
+# print(num)
+
+
+
+
+
+
+
 
 
     
