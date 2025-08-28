@@ -85,3 +85,26 @@
 
 
 
+
+
+
+# ----------------------------------->>>>>>>>>>>>>>>>
+
+#Dictionary 
+
+# simple student marks
+
+students = { }
+for i in range(5):
+    name = input("Enter the name of the student :")
+    marks = int(input(f"Enter the marks of {name}"))
+    students[name] = marks 
+
+    #dispplayy
+
+    print("\n --------- student marks")
+    for name,marks in students.item():
+        print(f"{name} : { marks}")
+
+
+
