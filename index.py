@@ -125,6 +125,106 @@
 
 
 
+#int 
+# a=3
+# b=7
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+
+# Float
+
+# a=3.9
+# b=7.2
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+
+#complex
+# z1 = 1 + 2j
+# z2 = 3- 4j
+
+# print(z1 + z2)
+# print(z1  - z2)
+# print(z1 / z2)
+# print(z1.real)
+# print(z2.imag)
+
+
+
+#String
+
+# str = '--string'
+# str1 = "--string1"
+# str2 = '''this is 
+#  multiline 
+#  string'''
+# print(str)
+# print(str1)
+# print(str2)
+
+
+#indexing and slicing in string
+
+# s = "lumbini ict campus"
+
+#positive indexing
+# print(s[3])
+# print(s[6])
+
+#negatice indexing
+# print(s[-1])
+# print(s[-5])
+
+#slicing
+# print(s[:7])
+# print(s[12:])
+# print(s[8:11])
+# print(s[:])
+
+#using steps
+# print(s[1:12:2])
+# print(s[-6:-1:2])
+
+#reverse the given string
+# print(s[ : : -1])
+
+
+# Escape sequence
+
+# s = "hello ,\n world" 
+# print(s)  
+# s1 = "hello ,\t world"
+# print(s1)
+# s2 = 'It\'s a wonderful day'
+# print(s2)
+# s3 = "She said,\"I am beautiful\" "
+# print(s3)
+
+#Boolean
+# result = 5 > 3
+# print(result)
+
+
+#List comprehensive
+
+words = ["Hello","World","python","is","good"]
+cap = [word.upper() for word in words]
+low = [word.lower() for word in words]
+print(cap)
+print(low)
+
+#Unpacking
+
+# t1 = (1,2,3,4,5)
+# a, *b , c = t1
+# print(a)  ---> a vannni ma place garni
+# print(b)   ----> * x so remaining sab tesma because 2 ta ma sab aatauna xa 
+# print(c)    --- > c ma last wala 
+
+
 
 
 
