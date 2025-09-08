@@ -1,8 +1,14 @@
 
 contact = { }
-def addContact(name,phone,email):
-    contact[name] = {'phone':phone , 'email':email}
+
+def addContact(name,phone,email,address):
+    contact[name] = {'phone':phone , 'email':email ,'address':address}
     print(f"Contact {name} added .")
+
+def display_all_contact():
+    if contact:
+        for name,details in contact.items():
+            print(f"Name :{name},Phone:{details['phone']} , Email:{details['email']} , Address:{details['address']}")
 
 
 def main():
@@ -16,7 +22,7 @@ def main():
         print("6.Exit")
 
         try:
-            choice = int(input("Enter your choice"))
+            choice = int(input("Enter your choice :"))
         except:
             print("Invalid input ! please enter a number between 1 and 6.")
             continue
@@ -25,9 +31,15 @@ def main():
             name = input("Enter your name :")
             email = input("Enter your email :")
             phone = input("Enter your phone :") 
-            addContact(name,email,phone)   
+            address = input("Enter your address :")
+            addContact(name,email,phone,address)   
 
+        if choice == 5 :
+            display_all_contact()
 
+        if choice == 6 :
+            print("Exiting the program")  
+            break   
 
 
 if __name__ == "__main__":
