@@ -1,28 +1,19 @@
-# l = int(input("Enter the length :"))
-# b= int(input("Enter the breadth :"))
-# area = l*b
-# peri=2*(l+b)
-# print(f"the area of rectangle is {area}")
-# print(f"the perimeter of rectangle is {peri}")
 
-# print(f"this is the product {2*2}")
-# print(f"this is the power {2**3}")
+class Rectangle:
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
 
+    def area(self):
+        print(f"Area of rectangle:{self.length*self.width}")
 
-print("Enter the sides :")
-a = int(input("enter the side a "))
-b=int(input("enter the side b "))
-c=int(input("enter the side c "))
+    def perimeter(self):
+        print(f"Perimeter of rectangle:{2*(self.length + self.width)}")
 
-s = (a+b+c) / 2 
+l = int(input("Enter length"))
+b = int (input("Enter breadth"))
+obj = Rectangle(l,b)
+obj.area()
+obj.perimeter()        
 
-area = (s*(s-a) * (s-b) * (s-c))**0.5
-
-print(f"the semi  of traingle is {s}")
-
-print(f"The area of triangle is {area:.3f}")
-
-
-
-
-
+    

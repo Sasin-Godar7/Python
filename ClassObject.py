@@ -85,7 +85,8 @@ obj1 = ostrich()
 obj1.types()
 obj1.prey()
 obj1.swim()  
-obj1.size()           
+obj1.size()  
+
 
 
         
