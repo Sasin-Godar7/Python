@@ -10,8 +10,8 @@ class Rectangle:
     def perimeter(self):
         print(f"Perimeter of rectangle:{2*(self.length + self.width)}")
 
-l = int(input("Enter length"))
-b = int (input("Enter breadth"))
+l = int(input("Enter length: "))
+b = int (input("Enter breadth: "))
 obj = Rectangle(l,b)
 obj.area()
 obj.perimeter()        
