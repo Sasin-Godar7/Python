@@ -1,31 +1,34 @@
 class BankAccount:
-    def __init__(self,balance,accountnum):
+    def __init__(self, accountnum, balance):
         self.accountnum = accountnum
         self.balance = balance
 
-    def deposit(self,amount):
-     if self.accountnum:
-        self.balance += amount
-        print(f"Your current balance is {self.balance}")
-     else:
-        print("Failed to deposit the amount")   
-   
-    def withdraw(self,amount):
-       if self.balance > 0:
-          self.balance -=amount
-          print(f"Your current balance is {self.balance}")
-       else:
-          print("insufficeint amount")
-            
-    
-        
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(f"✅ Deposited Rs.{amount}. Current balance: Rs.{self.balance}")
+        else:
+            print("❌ Deposit amount must be positive.")
+
+    def withdraw(self, amount):
+        if amount <= 0:
+            print("❌ Invalid withdrawal amount.")
+        elif self.balance >= amount:
+            self.balance -= amount
+            print(f"💸 Withdrawn Rs.{amount}. Current balance: Rs.{self.balance}")
+        else:
+            print("⚠️ Insufficient balance.")
 
 
+# ---- main program ----
+a = input("Enter your account number: ")
+b = int(input("Enter your initial balance: "))
 
-b = int(input("Enter the balance: "))
-a = input("Enter the account number: ")
-amount = 2000
-obj = BankAccount(a,b)
-obj.deposit(amount)
-obj.withdraw(amount)
+obj = BankAccount(a, b)
 
+# ask user for deposit and withdraw amount
+dep_amount = int(input("Enter amount to deposit: "))
+obj.deposit(dep_amount)
+
+with_amount = int(input("Enter amount to withdraw: "))
+obj.withdraw(with_amount)
