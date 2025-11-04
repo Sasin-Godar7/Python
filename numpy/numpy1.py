@@ -12,6 +12,9 @@ print(zeros_arr)
 ones_arr = np.ones((2,3))
 print(ones_arr)
 
+twos_arr = np.ones((2,3))*2
+print(twos_arr)
+
 #Random  
 random_arr = np.random.random((2,3))      # random vani aauta module ho tyo bata we need only random values
 print("Random Array :\n",random_arr)
