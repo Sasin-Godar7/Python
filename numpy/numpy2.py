@@ -33,3 +33,10 @@ print("\n overall mean sales:",mean_sales)
 print("\n overall median sales :",median_sales)
 print("\n overall standerd deviation of sales :",std_dev_sales.round(2))
 
+#step8 : indentify employee with max sales per day
+max_sales_day = np.max(sales_data,axis=1)
+print("\n maximum sales in a day per employee :",max_sales_day)
+best_employee = np.argmax(total_sales)
+print("employee with the highest total sales :",best_employee)
+
+
