@@ -14,7 +14,7 @@
 #normalize marks to scale(like converting to percentage or z-score).
 
 import numpy as np
-marks = np.random(50,100(20,5))
+marks = np.random.randint(50,100,(20,5))
 print("marks\n",marks)
 
 
@@ -24,9 +24,21 @@ print("total marks of each students is",total_marks)
 average_marks = np.mean(marks,axis=1)
 print("average marks of a student is ",average_marks)
 
-top3_std = np.argsort((total_marks)[-3: ][::1])
-print("top 3 student (by top marks):")
-for rank,idx in enumerate(top3_std,start=1):
-    print(f"Rank {rank}: Student{idx+1}-> total marks:{total_marks[idx]}")
+top3_idx = np.argsort(total_marks)[-3:][::-1]
+
+print("Top 3 students (by total marks):")
+for rank, idx in enumerate(top3_idx, start=1):
+    print(f"Rank {rank}: Student{idx+1} -> Total Marks: {total_marks[idx]}")
+
+sub_highest = np.max(marks,axis=0)
+sub_lowest = np.min(marks,axis=0)
+sub_average = np.mean(marks,axis=0)
+print("\subject wise highest marks:",sub_highest)    
+print("\nsubject wise lowest marks:",sub_lowest)
+print("subject wise average marks:",sub_average.round(2))
+
+percentage = (marks/100)*100
+print("\n percantage marks (normalize 0-100):\n",percentage.round(2))
+
 
 
