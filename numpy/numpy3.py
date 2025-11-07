@@ -15,7 +15,7 @@
 
 import numpy as np
 marks = np.random.randint(50,100,(20,5))
-print("marks\n",marks)
+print("marks\n",marks) 
 
 
 total_marks = np.sum(marks,axis=1)
